@@ -16,6 +16,6 @@ while(n1 != mag):
         '''.format(nome,x))
     elif(n1>10)or(n1<0):
         print('''\33[0;33;41m
-                    POOOOOOORRAAA, {} FALEI DE 0 A 10 PQ VC NÃO FEZ DO JEITO Q FALEI
+                    POOOOOOORRAAA {}, FALEI DE 0 A 10 PQ VC NÃO FEZ DO JEITO Q FALEI???
         \33[m'''.format(nome))
     x=x+1
