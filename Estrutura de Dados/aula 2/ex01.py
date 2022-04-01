@@ -4,6 +4,7 @@ def selection(x):
         for j in range(i+1, n):
             if x[i]>x[j]:
                 x[i], x[j] = x[j], x[i]
+            print('''{} - {} - {}'''.format(i, j, x))
     return x 
 x = [2, 7, 8, 1, 3, 6]
 print(selection(x))
