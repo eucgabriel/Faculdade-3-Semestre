@@ -1,9 +1,9 @@
 from tank import Tank
 
 tanks = {
-    'a': Tank('Alice'),
-    'b': Tank('Bob'),
-    'c': Tank('Carol')
+    'a': Tank('Felipe'),
+    'b': Tank('CG'),
+    'c': Tank('Matheus')
 }
 
 alive_tanks = len(tanks)
