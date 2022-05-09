@@ -1,7 +1,7 @@
 from tank import Tank
 
 tanks = {
-    'a': Tank('Felipe'),
+    'a': Tank('Carla'),
     'b': Tank('CG'),
     'c': Tank('Matheus')
 }
