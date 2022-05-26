@@ -1,6 +1,6 @@
 from bubbleSort import NaoOtima
 obj = NaoOtima()
-n = 1000
+n = 10000
 a = []
 for i in range(0, n):
     a.append(n-i)
