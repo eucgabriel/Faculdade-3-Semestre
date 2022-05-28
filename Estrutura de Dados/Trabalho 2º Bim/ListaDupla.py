@@ -1,6 +1,7 @@
 from Elemento import Elemento
 from No import No
 
+
 class ListaDuplamenteEncadeada:
 
     cabeca = None
@@ -73,9 +74,8 @@ class ListaDuplamenteEncadeada:
             no_atual = no_atual.proximo
         print(no)
         print("=" * 80)
-    
+
     def visitaInvertido(self, dado):
-        
 
 
 lista = ListaDuplamenteEncadeada()

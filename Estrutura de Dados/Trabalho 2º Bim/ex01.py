@@ -47,6 +47,8 @@ class ListaDuplamenteEncadeada:
             no_atual = no_atual.proximo
         print(no)
         print("=" * 80)
+
+
 lista = ListaDuplamenteEncadeada()
 
 lista.setProximo(2)
