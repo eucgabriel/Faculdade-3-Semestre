@@ -1,0 +1,7 @@
+{
+    "python.testing.pytestArgs": [
+        "Estrutura de Dados"
+    ],
+    "python.testing.unittestEnabled": false,
+    "python.testing.pytestEnabled": true
+}
