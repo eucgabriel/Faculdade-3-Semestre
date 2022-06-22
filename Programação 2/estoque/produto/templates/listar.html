@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+{% block product %}
+<div class="buttons">
+  <a class="button is-primary" href="{% url 'produto:novo' %}">
+    Novo
+  </a>
+</div>
+<table class="table">
+  <thead>
+    <tr>
+      <th><abbr title="Id">Id</abbr></th>
+      <th><abbr title="Produto">Produto</abbr></th>
+      <th><abbr title="Cor">Cor</abbr></th>
+      <th><abbr title="Preço">Preço</abbr></th>
+      <th><abbr title="Quantidade">Quantidade</abbr></th>
+      <th></th>
+      <th><span class="icon">
+        <i class="application-edit-outline"></i>
+      </span></th>
+      
+    </tr>
+  </thead>
+
+  <tbody>
+    {% for produto in produtos %}
+    <tr>
+      <th>{{ produto.id }}</th>
+      <td>{{ produto.produto }}</td>
+      <td>{{ produto.cor }}</td>
+      <td>{{ produto.preco }}</td>
+      <td>{{ produto.quantidade }}</td>
+      <td><a href="{% url 'produto:alterar' produto.id %}">alterar</a></td>
+      <td><a href="{% url 'produto:deletar' produto.id %}">deletar</a></td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+{% endblock %}
