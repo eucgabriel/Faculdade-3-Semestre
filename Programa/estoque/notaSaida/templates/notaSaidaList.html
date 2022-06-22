@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block product %}
+  <a href="{% url 'notaSaida:notaSaidaNew' %}">Novo</a>
+  <br/>
+  {% for i in nota_saida %}
+    <p>{{ i.id }},
+      {{ i.produto }},
+      {{ i.quantidade }},
+      {{ i.preco }} - 
+      <a href="{% url 'notaSaida:notaSaidaDelete' i.id %}">deletar</a>
+      <a href="{% url 'notaSaida:notaSaidaUpdate' i.id %}">alterar</a>
+      
+    </p>
+  {% endfor %}
+{% endblock %}

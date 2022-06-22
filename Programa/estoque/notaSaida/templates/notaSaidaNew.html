@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block product %}
+<form action="{% url 'notaSaida:notaSaidaNew' %}" method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Enviar</button>
+</form>
+{% endblock %}
